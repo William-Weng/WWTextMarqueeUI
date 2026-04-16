@@ -6,8 +6,6 @@
 - `WWTextMarqueeUI` is a SwiftUI wrapper for rendering LED-style marquee text using `WWTextRasterizer`.
 - 一個用 SwiftUI 封裝的 LED 跑馬燈文字元件，內部使用 `WWTextRasterizer` 將文字轉成點矩陣影像，呈現出 LED 標示牌的跑馬燈效果。
 
----
-
 ## 📷 [效果預覽](https://peterpanswift.github.io/iphone-bezels/)
 
 ![](https://github.com/user-attachments/assets/4e6bb961-c7f2-40ff-a51b-724ea9668387)
@@ -20,8 +18,6 @@ https://github.com/user-attachments/assets/b9c72fec-0f4f-4461-b95a-e5410f251dd8
 
 </div>
 
----
-
 ## ✨ [特性](https://github.com/William-Weng/WWTextRasterizer)
 
 - 純 SwiftUI API，可以直接嵌入 SwiftUI 畫面。
@@ -33,8 +29,6 @@ https://github.com/user-attachments/assets/b9c72fec-0f4f-4461-b95a-e5410f251dd8
 - 可自訂 LED 顏色、點大小、點間距、發光效果 `glow`。
 - 用 `TimelineView(.animation)` 跑動畫，維持較輕量的更新方式。
 
----
-
 ## 🍄 [設計思路](https://william-weng.github.io/)
 
 `WWTextMarqueeUI` 把畫面分成兩層：
@@ -43,8 +37,6 @@ https://github.com/user-attachments/assets/b9c72fec-0f4f-4461-b95a-e5410f251dd8
 2. 一個「文字影像」，把文字轉成點陣圖，用 `WWTextRasterizer` 的 `renderLEDMatrixText(...)` 渲染出來。
 
 動畫本身只會在 `TimelineView(.animation)` 裡，根據 `startDate` 與 `speed`，重新計算 `textImage` 的 X 座標，讓文字由右往左跑；而「重新產生光柵化圖片」只會在 `text` 或樣式改變時觸發，平常播放時只做位移，所以比較輕量。
-
----
 
 ## 💿 [安裝方式](https://medium.com/彼得潘的-swift-ios-app-開發問題解答集/使用-spm-安裝第三方套件-xcode-11-新功能-2c4ffcf85b4b )
 
@@ -55,8 +47,6 @@ dependencies: [
     .package(url: "https://github.com/William-Weng/WWTextMarqueeUI", .upToNextMinor(from: "1.0.0"))
 ]
 ```
-
----
 
 ## 🧲 內部參數
 
@@ -70,8 +60,6 @@ dependencies: [
 | `ledColor` | LED 亮燈、暗燈與背景顏色。 |
 | `dot` | LED 點的大小、間距與形狀。 |
 | `glow` | 發光效果，包含透明度、內縮比例與偏移。 |
-
----
 
 ## ⚡ 用法
 
