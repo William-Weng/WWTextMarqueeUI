@@ -42,8 +42,7 @@ https://github.com/user-attachments/assets/b9c72fec-0f4f-4461-b95a-e5410f251dd8
 1. 一個「靜態底圖」，用 `WWTextRasterizer.renderLEDMatrixBase(...)` 產生。
 2. 一個「文字影像」，把文字轉成點陣圖，用 `WWTextRasterizer` 的 `renderLEDMatrixText(...)` 渲染出來。
 
-動畫本身只會在 `TimelineView(.animation)` 裡，根據 `startDate` 與 `speed`，重新計算 `textImage` 的 X 座標，讓文字由右往左跑；  
-而「重新產生光柵化圖片」只會在 `text` 或樣式改變時觸發，平常播放時只做位移，所以比較輕量。
+動畫本身只會在 `TimelineView(.animation)` 裡，根據 `startDate` 與 `speed`，重新計算 `textImage` 的 X 座標，讓文字由右往左跑；而「重新產生光柵化圖片」只會在 `text` 或樣式改變時觸發，平常播放時只做位移，所以比較輕量。
 
 ---
 
