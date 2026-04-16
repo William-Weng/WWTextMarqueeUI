@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		819E99A42F90792100160FC2 /* WWTextMarqueeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 819E99A32F90792100160FC2 /* WWTextMarqueeUI */; };
+		819E99B72F90943000160FC2 /* WWTextMarqueeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 819E99B62F90943000160FC2 /* WWTextMarqueeUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819E99B72F90943000160FC2 /* WWTextMarqueeUI in Frameworks */,
 				819E99A42F90792100160FC2 /* WWTextMarqueeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = Example;
 			packageProductDependencies = (
 				819E99A32F90792100160FC2 /* WWTextMarqueeUI */,
+				819E99B62F90943000160FC2 /* WWTextMarqueeUI */,
 			);
 			productName = Example;
 			productReference = 819E998E2F9078E900160FC2 /* Example.app */;
@@ -101,7 +104,7 @@
 			mainGroup = 819E99852F9078E900160FC2;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				819E99A22F90792100160FC2 /* XCLocalSwiftPackageReference "../../@WWTextMarqueeUI" */,
+				819E99B52F90943000160FC2 /* XCRemoteSwiftPackageReference "WWTextMarqueeUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 819E998F2F9078E900160FC2 /* Products */;
@@ -344,16 +347,25 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		819E99A22F90792100160FC2 /* XCLocalSwiftPackageReference "../../@WWTextMarqueeUI" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../@WWTextMarqueeUI";
+/* Begin XCRemoteSwiftPackageReference section */
+		819E99B52F90943000160FC2 /* XCRemoteSwiftPackageReference "WWTextMarqueeUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWTextMarqueeUI";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		819E99A32F90792100160FC2 /* WWTextMarqueeUI */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = WWTextMarqueeUI;
+		};
+		819E99B62F90943000160FC2 /* WWTextMarqueeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 819E99B52F90943000160FC2 /* XCRemoteSwiftPackageReference "WWTextMarqueeUI" */;
 			productName = WWTextMarqueeUI;
 		};
 /* End XCSwiftPackageProductDependency section */

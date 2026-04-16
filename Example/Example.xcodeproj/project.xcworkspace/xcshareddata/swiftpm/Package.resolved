@@ -1,6 +1,15 @@
 {
-  "originHash" : "a268853b28d1d452ee553db986403cedd900e70e76533e77d3895b494b3a7e78",
+  "originHash" : "77d3ffd87b6d066a0d887517df58e8bebf61793017979e6aa7b3929d868356c1",
   "pins" : [
+    {
+      "identity" : "wwtextmarqueeui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWTextMarqueeUI",
+      "state" : {
+        "revision" : "7c62ae5e65da652c1bc1388b1c261fa4cc1aaa37",
+        "version" : "1.0.0"
+      }
+    },
     {
       "identity" : "wwtextrasterizer",
       "kind" : "remoteSourceControl",

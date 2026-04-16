@@ -10,6 +10,15 @@
 
 ## 📷 [效果預覽](https://peterpanswift.github.io/iphone-bezels/)
 
+![](https://github.com/user-attachments/assets/4e6bb961-c7f2-40ff-a51b-724ea9668387)
+
+https://github.com/user-attachments/assets/b9c72fec-0f4f-4461-b95a-e5410f251dd8
+
+<div align="center">
+
+**⭐ 覺得好用就給個 Star 吧！**
+
+</div>
 ---
 
 ## ✨ [特性](https://github.com/William-Weng/WWTextRasterizer)
